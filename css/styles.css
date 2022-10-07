@@ -17,6 +17,7 @@
 
   body {
     font-family: var(--primary-font-family);
+    background-color: #FFFFFF;
 
   }
   /* ============= COMPONENTS ============= */
@@ -46,8 +47,18 @@
     color: var(--primary-color);
     
   }
-  .invisible {
-    color: var(--primary-white-color);
+  .vissually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: 1px;
+
   }
   /* ============= COMPONENTS ============= */
   /* ============= HEADER ============= */
@@ -97,15 +108,21 @@
   }
   /* ============= HEADER ============= */
   /* ============= HERO ============= */
+  .hero {
+    background-color: #2F303A;
+  }
+
   .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-align: center;
     letter-spacing: 0.06em;  
     text-transform: uppercase;
-    /*color: var(--primary-white-color);*/
+    color: var(--primary-white-color);
   }
-  .modal-btn{
+  .modal-btn {
+    font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -117,8 +134,81 @@
     background-color: var(--accent-color);
     color: var(--primary-white-color);
   }
+
+  .modal-btn:hover,
+  .modal-btn:focus {
+    background-color:#188CE8;
+    font-family: var(--primary-font-family);
   
+  }
+
+  
+ 
+
+  /* ============= HERO ============= */
+
+  /*============== WORK ==============*/
+
+
+  /*============= TEAM ===============*/
+    .team {
+      background-color: #F5F4FA;
+    }
+    .team li {
+      background-color: var(--primary-white-color);
+    }
+    .titel-team {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+    .about-text-team {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    }
+
+  /* ============= FOOTER ============= */
+    .page-footer{
+      background-color: #2F303A;
+
+    }
+  .logo-word-footer {
+      
+      color: var(--primary-white-color);
+      
+    }
+    .contact-list-adress{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--primary-white-color)
+    }
+    .contact-list-link {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+  /* ============= FOOTER ============= */
+
+  /*=============PORTFOLIO============*/
   .modal-btn-portfolio {
+    font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;  
@@ -126,6 +216,9 @@
     letter-spacing: 0.03em;
     cursor: pointer;
     color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    background-color: #F5F4FA;
+
   }
   .modal-btn-portfolio:hover,
   .modal-btn-portfolio:focus {
@@ -133,21 +226,20 @@
     color: var(--primary-white-color);  
   }
 
-  /* ============= HERO ============= */
-  /* ============= FOOTER ============= */
-    .logo-word-footer {
-      
-      color: var(--primary-white-color);
-      background-color:#2F303A;
-    }
-    .contact-list-link {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        
-       /* color: var(--primary-white-color);*/
-    }
-    
-  /* ============= FOOTER ============= */
+  .titel-portfolio {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
 
+  }
+  .about-text-portfolio {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
